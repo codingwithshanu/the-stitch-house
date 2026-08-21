@@ -11,7 +11,7 @@ export default function LocationMap() {
     <section className="py-16 sm:py-24 bg-cream-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-cream-200 shadow-luxury overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-          
+
           {/* Info Side */}
           <div className="lg:col-span-6 p-8 sm:p-12 flex flex-col justify-between space-y-8">
             <div className="space-y-4">
@@ -35,7 +35,7 @@ export default function LocationMap() {
                 </div>
                 <div>
                   <p className="font-semibold text-charcoal-900">Studio Address</p>
-                  <p className="text-charcoal-600">Near 56 Dukan, New Palasia, Indore, Madhya Pradesh 452001</p>
+                  <p className="text-charcoal-600">Rau, Indore, Madhya Pradesh, India</p>
                 </div>
               </div>
 
@@ -45,8 +45,8 @@ export default function LocationMap() {
                 </div>
                 <div>
                   <p className="font-semibold text-charcoal-900">Hours & Appointments</p>
-                  <p className="text-charcoal-600">Monday – Saturday: 10:30 AM – 8:00 PM</p>
-                  <p className="text-charcoal-500 text-xs mt-0.5">Sundays strictly by prior appointment</p>
+                  <p className="text-charcoal-600">Monday – Saturday: 10:00 AM – 8:00 PM</p>
+                  {/* <p className="text-charcoal-500 text-xs mt-0.5">Sundays strictly by prior appointment</p> */}
                 </div>
               </div>
 
@@ -56,8 +56,8 @@ export default function LocationMap() {
                 </div>
                 <div>
                   <p className="font-semibold text-charcoal-900">Direct Contact</p>
-                  <a href="tel:+919876543210" className="text-rosewood-800 font-semibold hover:underline">
-                    +91 98765 43210
+                  <a href="tel:+919074371984" className="text-rosewood-800 font-semibold hover:underline">
+                    +91 9074371984
                   </a>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function LocationMap() {
           <div className="lg:col-span-6 min-h-[320px] bg-cream-200 relative border-t lg:border-t-0 lg:border-l border-cream-200">
             <iframe
               title="The Stitch House Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720.658253995874!2d75.875!3d22.724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd23038676d5%3A0x6b09c5df0c1737e4!2sNew%20Palasia%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14729.50862979157!2d75.79621734910485!3d22.639722421100146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fbe3a976d669%3A0x9545e51ad1611636!2sRau%2C%20Indore%2C%20Madhya%20Pradesh%20453331!5e0!3m2!1sen!2sin!4v1787307088331!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '380px' }}

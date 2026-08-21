@@ -98,7 +98,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-charcoal-900">Studio Location</p>
                     <p className="text-charcoal-600 text-xs sm:text-sm mt-0.5">
-                      Near 56 Dukan, New Palasia, Indore, Madhya Pradesh 452001
+                      Rau, Indore, Madhya Pradesh
                     </p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="text-emerald-700 font-semibold hover:underline text-xs sm:text-sm block mt-0.5"
                     >
-                      +91 98765 43210 (Instant Chat)
+                      +91 90743 71984 (Instant Chat)
                     </a>
                   </div>
                 </div>
@@ -126,8 +126,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-charcoal-900">Phone</p>
-                    <a href="tel:+919876543210" className="text-charcoal-700 hover:text-rosewood-800 text-xs sm:text-sm block mt-0.5">
-                      +91 98765 43210
+                    <a href="tel:+919074371984" className="text-charcoal-700 hover:text-rosewood-800 text-xs sm:text-sm block mt-0.5">
+                      +91 90743 71984
                     </a>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-charcoal-900">Studio Hours</p>
                     <p className="text-charcoal-600 text-xs sm:text-sm mt-0.5">
-                      Mon - Sat: 10:30 AM - 8:00 PM<br />Sunday: By Appointment Only
+                      Mon - Sat: 10:00 AM - 8:00 PM
                     </p>
                   </div>
                 </div>

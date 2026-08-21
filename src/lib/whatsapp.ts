@@ -8,7 +8,7 @@ export interface WhatsAppProductQuery {
 }
 
 export function getWhatsAppNumber(): string {
-  const num = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919876543210';
+  const num = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919074371984';
   return num.replace(/[^0-9]/g, '');
 }
 

@@ -41,12 +41,12 @@ export default function Footer() {
               </span>
               <p className="text-xs font-sans tracking-widest uppercase text-gold-400 mt-0.5 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-gold-400" />
-                By Designer Neelima • Indore
+                By Designer Neelima
               </p>
             </Link>
 
             <p className="text-sm text-charcoal-300 leading-relaxed">
-              &ldquo;Made with Precision, Worn with Confidence.&rdquo; Bespoke women’s tailoring, couture bridal lehengas, hand-embroidered blouses, and custom alterations in Indore.
+              &ldquo;Made with Precision, Worn with Confidence.&rdquo; Bespoke women’s tailoring, couture bridal lehengas, hand-embroidered blouses, and custom alterations.
             </p>
 
             <div className="flex items-center space-x-3 pt-2">
@@ -94,8 +94,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/glam-by-neelima" className="text-gold-300 hover:text-white transition-colors font-medium">
-                  💄 Neelima Makeup Art (@glam_by_neelima)
+                <Link href="/glam-by-neelima" className="hover:text-gold-300 transition-colors">
+                  Neelima Makeup Art
                 </Link>
               </li>
               <li>
@@ -158,30 +158,30 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-charcoal-300">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-gold-400 mt-1 flex-shrink-0" />
-                <span>Near 56 Dukan, New Palasia, Indore, Madhya Pradesh 452001</span>
+                <span>Rau, Indore, Madhya Pradesh</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-gold-400 flex-shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-gold-300">
-                  +91 98765 43210
+                <a href="tel:+919074371984" className="hover:text-gold-300">
+                  +91 9074371984
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-gold-400 mt-1 flex-shrink-0" />
-                <span>Mon - Sat: 10:30 AM - 8:00 PM<br />Sunday: By Appointment</span>
+                <span>Mon - Sat: 10:00 AM - 8:00 PM</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-charcoal-400">
+        <div className="text-center pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-charcoal-400">
           <p className="flex items-center gap-1 text-center sm:text-left">
             © {new Date().getFullYear()} The Stitch House. Crafted with{' '}
-            <Heart className="w-3.5 h-3.5 text-rosewood-500 fill-rosewood-500 inline" /> for fashion lovers in Indore.
+            <Heart className="w-3.5 h-3.5 text-rosewood-500 fill-rosewood-500 inline" /> by Shanu.
           </p>
 
-          <div className="flex items-center space-x-6">
+          {/* <div className="flex items-center space-x-6">
             <Link
               href="/admin/login"
               className="text-charcoal-400 hover:text-gold-300 flex items-center gap-1.5 transition-colors"
@@ -197,7 +197,7 @@ export default function Footer() {
             >
               @stitch_by_neelima
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -41,8 +41,8 @@ export default function GlamClient({ settings, services, portfolio }: GlamClient
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const glamPhone = settings?.glamPhone || '+91 98765 43210';
-  const glamWhatsapp = settings?.glamWhatsappNumber || '919876543210';
+  const glamPhone = settings?.glamPhone || '+91 90743 71984';
+  const glamWhatsapp = settings?.glamWhatsappNumber || '919074371984';
   const glamInstaHandle = settings?.glamInstagramHandle || 'glam_by_neelima';
   const glamInstaUrl = settings?.glamInstagramUrl || 'https://instagram.com/glam_by_neelima';
   const glamBio =
@@ -462,7 +462,7 @@ export default function GlamClient({ settings, services, portfolio }: GlamClient
                   <div>
                     <p className="font-semibold text-charcoal-900">Studio / Venue Service</p>
                     <p className="text-charcoal-600 text-xs">
-                      Studio near 56 Dukan, New Palasia, Indore. Venue travel available across MP.
+                      Studio Rau, Indore
                     </p>
                   </div>
                 </div>

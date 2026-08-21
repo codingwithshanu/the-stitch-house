@@ -103,10 +103,10 @@ This architecture is specifically designed to run **completely free of cost** fo
    - `JWT_SECRET`: *(A random secure 32+ character string)*
    - `ADMIN_EMAIL`: `admin@stitchhouse.com`
    - `ADMIN_PASSWORD`: `your-strong-password`
-   - `NEXT_PUBLIC_WHATSAPP_NUMBER`: `919876543210`
+   - `NEXT_PUBLIC_WHATSAPP_NUMBER`: `919074371984`
    - `NEXT_PUBLIC_INSTAGRAM_HANDLE`: `stitch_by_neelima`
    - `NEXT_PUBLIC_INSTAGRAM_URL`: `https://instagram.com/stitch_by_neelima`
-   - `NEXT_PUBLIC_PHONE_NUMBER`: `+91 98765 43210`
+   - `NEXT_PUBLIC_PHONE_NUMBER`: `+91 90743 71984`
 5. Click **"Deploy"**. Vercel will automatically build and publish the site with a free `.vercel.app` domain and SSL certificate.
 
 ### Step 3: Run Database Seed on Production

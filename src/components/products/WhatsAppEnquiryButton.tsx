@@ -95,7 +95,7 @@ export default function WhatsAppEnquiryButton({ product }: WhatsAppEnquiryButton
         </a>
 
         {/* Instagram DM button */}
-        {product.instagramUrl && (
+        {/* {product.instagramUrl && (
           <a
             href={product.instagramUrl}
             target="_blank"
@@ -105,11 +105,11 @@ export default function WhatsAppEnquiryButton({ product }: WhatsAppEnquiryButton
             <Instagram className="w-4 h-4 text-[#E1306C]" />
             <span>View Reel & DM on Instagram</span>
           </a>
-        )}
+        )} */}
 
         <div className="flex items-center justify-center gap-2 text-[11px] text-charcoal-500 pt-1">
           <Sparkles className="w-3 h-3 text-gold-500" />
-          <span>Direct chat with Designer Neelima • Indore Studio Delivery</span>
+          <span>Direct chat with Designer Neelima</span>
         </div>
       </div>
     </div>

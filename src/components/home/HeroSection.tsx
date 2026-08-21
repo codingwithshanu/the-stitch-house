@@ -36,7 +36,7 @@ export default function HeroSection() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <div className="text-center flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
               <Link
                 href="/collections"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-rosewood-800 hover:bg-rosewood-900 text-white text-sm font-semibold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-200"
@@ -49,11 +49,11 @@ export default function HeroSection() {
                 href="/custom-stitching"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-cream-100 text-charcoal-800 text-sm font-semibold uppercase tracking-wider border border-cream-300 shadow-sm transition-all duration-200"
               >
-                <Scissors className="w-4 h-4 text-gold-600" />
                 <span>Custom Stitching Guide</span>
+                <Scissors className="w-4 h-4 text-gold-600" />
               </Link>
 
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,7 +61,7 @@ export default function HeroSection() {
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600 fill-emerald-600" />
                 <span>Chat on WhatsApp</span>
-              </a>
+              </a> */}
             </div>
 
             {/* Trust Highlights */}
@@ -71,12 +71,12 @@ export default function HeroSection() {
                 <p className="text-xs text-charcoal-500 font-medium">Bespoke Fitting</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="font-serif text-2xl font-bold text-gold-700">500+</p>
+                <p className="font-serif text-2xl font-bold text-gold-700">50+</p>
                 <p className="text-xs text-charcoal-500 font-medium">Happy Clients</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="font-serif text-2xl font-bold text-charcoal-900">Indore</p>
-                <p className="text-xs text-charcoal-500 font-medium">Studio & Delivery</p>
+                <p className="font-serif text-2xl font-bold text-charcoal-900">PAN</p>
+                <p className="text-xs text-charcoal-500 font-medium">India Delivery</p>
               </div>
             </div>
           </div>

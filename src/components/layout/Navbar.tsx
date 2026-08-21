@@ -95,7 +95,7 @@ export default function Navbar() {
 
           {/* Desktop Right Actions: Instagram & WhatsApp */}
           <div className="hidden md:flex items-center space-x-3">
-            <a
+            {/* <a
               href="https://instagram.com/stitch_by_neelima"
               target="_blank"
               rel="noopener noreferrer"
@@ -104,7 +104,7 @@ export default function Navbar() {
             >
               <Instagram className="w-4 h-4 text-[#E1306C]" />
               <span className="hidden lg:inline text-charcoal-600">@stitch_by_neelima</span>
-            </a>
+            </a> */}
 
             <a
               href={whatsappLink}

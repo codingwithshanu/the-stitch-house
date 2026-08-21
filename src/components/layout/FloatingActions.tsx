@@ -19,7 +19,7 @@ export default function FloatingActions() {
     <aside aria-label="Quick contact" className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-cream-200 px-4 py-2.5 shadow-2xl flex items-center justify-between gap-3">
       {/* Call Button */}
       <a
-        href="tel:+919876543210"
+        href="tel:+919074371984"
         className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-full bg-cream-100 text-charcoal-800 text-xs font-semibold uppercase tracking-wider border border-cream-300 hover:bg-cream-200 active:scale-95 transition-all"
       >
         <Phone className="w-4 h-4 text-charcoal-700" />

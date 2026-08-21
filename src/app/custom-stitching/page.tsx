@@ -199,7 +199,7 @@ export default function CustomStitchingPage() {
                 </div>
                 <div className="flex items-center gap-2 text-xs font-medium text-charcoal-800">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>Visit our boutique near 56 Dukan, Indore for in-person trial</span>
+                  <span>Visit our boutique Indore for in-person trial</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-medium text-charcoal-800">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />

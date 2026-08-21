@@ -14,12 +14,12 @@ export default function AdminSettingsPage() {
     id: 'default',
     businessName: 'The Stitch House',
     tagline: 'Made with Precision, Worn with Confidence.',
-    phone: '+91 98765 43210',
-    whatsappNumber: '919876543210',
+    phone: '+91 90743 71984',
+    whatsappNumber: '919074371984',
     instagramHandle: 'stitch_by_neelima',
     instagramUrl: 'https://instagram.com/stitch_by_neelima',
-    address: 'Near 56 Dukan, New Palasia, Indore, Madhya Pradesh 452001',
-    openingHours: 'Mon - Sat: 10:30 AM - 8:00 PM | Sunday: By Appointment',
+    address: 'Rau, Indore, Madhya Pradesh',
+    openingHours: 'Mon - Sat: 10:00 AM - 8:00 PM',
     aboutStory: '',
   });
 
@@ -156,7 +156,7 @@ export default function AdminSettingsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-charcoal-700 mb-1">
-                  WhatsApp Number (with country code, e.g. 919876543210)
+                  WhatsApp Number (with country code, e.g. 919074371984)
                 </label>
                 <input
                   type="text"

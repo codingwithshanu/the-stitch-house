@@ -61,8 +61,8 @@ export default function AdminGlamPage() {
   const [glamSettingsForm, setGlamSettingsForm] = useState({
     glamBusinessName: 'Neelima Makeup Art',
     glamTagline: 'Enhancing Your Natural Beauty • Professional Makeup & Hair',
-    glamPhone: '+91 98765 43210',
-    glamWhatsappNumber: '919876543210',
+    glamPhone: '+91 90743 71984',
+    glamWhatsappNumber: '919074371984',
     glamInstagramHandle: 'glam_by_neelima',
     glamInstagramUrl: 'https://instagram.com/glam_by_neelima',
     glamBio: '',
@@ -85,8 +85,8 @@ export default function AdminGlamPage() {
         setGlamSettingsForm({
           glamBusinessName: setRes.settings.glamBusinessName || 'Neelima Makeup Art',
           glamTagline: setRes.settings.glamTagline || 'Enhancing Your Natural Beauty • Professional Makeup & Hair',
-          glamPhone: setRes.settings.glamPhone || '+91 98765 43210',
-          glamWhatsappNumber: setRes.settings.glamWhatsappNumber || '919876543210',
+          glamPhone: setRes.settings.glamPhone || '+91 90743 71984',
+          glamWhatsappNumber: setRes.settings.glamWhatsappNumber || '919074371984',
           glamInstagramHandle: setRes.settings.glamInstagramHandle || 'glam_by_neelima',
           glamInstagramUrl: setRes.settings.glamInstagramUrl || 'https://instagram.com/glam_by_neelima',
           glamBio: setRes.settings.glamBio || '',
@@ -520,7 +520,7 @@ export default function AdminGlamPage() {
                   onChange={(e) =>
                     setGlamSettingsForm({ ...glamSettingsForm, glamWhatsappNumber: e.target.value })
                   }
-                  placeholder="919876543210"
+                  placeholder="919074371984"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-cream-200 text-xs sm:text-sm text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-rosewood-800/20"
                 />
               </div>
@@ -536,7 +536,7 @@ export default function AdminGlamPage() {
                   onChange={(e) =>
                     setGlamSettingsForm({ ...glamSettingsForm, glamPhone: e.target.value })
                   }
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 90743 71984"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-cream-200 text-xs sm:text-sm text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-rosewood-800/20"
                 />
               </div>

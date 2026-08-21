@@ -66,13 +66,13 @@ export default function RootLayout({
     name: 'The Stitch House',
     image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b',
     description: 'Boutique stitching, designer lehengas, custom blouses & alterations in Indore by Neelima.',
-    telephone: '+91 98765 43210',
+    telephone: '+91 90743 71984',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Near 56 Dukan, New Palasia',
+      streetAddress: 'Rau',
       addressLocality: 'Indore',
       addressRegion: 'Madhya Pradesh',
-      postalCode: '452001',
+      postalCode: '453331',
       addressCountry: 'IN',
     },
     geo: {
@@ -84,7 +84,7 @@ export default function RootLayout({
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:30',
+        opens: '10:00',
         closes: '20:00',
       },
     ],
