@@ -7,16 +7,16 @@ async function main() {
   console.log('🌱 Starting database seed for The Stitch House...');
 
   // 1. Clean existing records
-  await prisma.inquiry.deleteMany();
+  // await prisma.adminUser.deleteMany();
+  // await prisma.inquiry.deleteMany();
   // await prisma.productImage.deleteMany();
   // await prisma.product.deleteMany();
   // await prisma.category.deleteMany();
-  await prisma.instagramPost.deleteMany();
+  // await prisma.instagramPost.deleteMany();
   // await prisma.siteSetting.deleteMany();
-  await prisma.adminUser.deleteMany();
 
   // 2. Create Admin User
-  const hashedPassword = await bcrypt.hash('TheStitchHouse@9074371984', 25);
+  const hashedPassword = await bcrypt.hash('TheStitchHouse@9074371984', 10);
   const admin = await prisma.adminUser.create({
     data: {
       email: 'admin@stitchhouse.com',

@@ -44,7 +44,7 @@ export default function AdminClientLayout({
   }
 
   return (
-    <div className="min-h-screen bg-cream-50 flex">
+    <div className="min-h-screen bg-cream-50 flex  mt-[-71px]">
       {/* Desktop Sidebar */}
       <div className="hidden lg:block flex-shrink-0">
         <AdminSidebar />
