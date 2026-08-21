@@ -1,0 +1,141 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  image       String?
+  sortOrder   Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  products    Product[]
+}
+
+model Product {
+  id              String         @id @default(uuid())
+  name            String
+  slug            String         @unique
+  description     String
+  categoryId      String
+  category        Category       @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  price           Float?
+  priceOnRequest  Boolean        @default(false)
+  sizes           String?        // e.g. "XS, S, M, L, XL, Custom Stitching"
+  colors          String?        // e.g. "Emerald Green, Rani Pink, Wine"
+  fabric          String?        // e.g. "Pure Georgette, Raw Silk, Chanderi"
+  customization   String?        // Custom stitching notes
+  status          String         @default("AVAILABLE") // AVAILABLE, CUSTOM_ONLY, SOLD_OUT, COMING_SOON
+  isFeatured      Boolean        @default(false)
+  isPublished     Boolean        @default(true)
+  tags            String?        // Comma-separated tags
+  instagramUrl    String?        // Link to matching Instagram reel/post
+  viewsCount      Int            @default(0)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  images          ProductImage[]
+  inquiries       Inquiry[]
+}
+
+model ProductImage {
+  id        String   @id @default(uuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  url       String
+  altText   String?
+  isPrimary Boolean  @default(false)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model Inquiry {
+  id          String   @id @default(uuid())
+  productId   String?
+  product     Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  name        String
+  phone       String
+  email       String?
+  message     String
+  serviceType String?  // "Custom Stitching", "Product Inquiry", "Alteration", "Consultation"
+  status      String   @default("NEW") // NEW, CONTACTED, CLOSED
+  createdAt   DateTime @default(now())
+}
+
+model InstagramPost {
+  id        String   @id @default(uuid())
+  title     String?
+  imageUrl  String
+  postUrl   String
+  caption   String?
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model SiteSetting {
+  id              String   @id @default("default")
+  businessName    String   @default("The Stitch House")
+  tagline         String   @default("Made with Precision, Worn with Confidence.")
+  phone           String   @default("+91 98765 43210")
+  whatsappNumber  String   @default("919876543210")
+  instagramHandle String   @default("stitch_by_neelima")
+  instagramUrl    String   @default("https://instagram.com/stitch_by_neelima")
+  address         String   @default("Near 56 Dukan, New Palasia, Indore, Madhya Pradesh 452001")
+  openingHours    String   @default("Mon - Sat: 10:30 AM - 8:00 PM (Sunday by appointment)")
+  aboutStory      String?
+
+  // Glam by Neelima (Makeup & Hair) Settings
+  glamBusinessName    String   @default("Neelima Makeup Art")
+  glamTagline         String   @default("Enhancing Your Natural Beauty • Professional Makeup & Hair")
+  glamPhone           String   @default("+91 98765 43210")
+  glamWhatsappNumber  String   @default("919876543210")
+  glamInstagramHandle String   @default("glam_by_neelima")
+  glamInstagramUrl    String   @default("https://instagram.com/glam_by_neelima")
+  glamBio             String   @default("Professional Bridal & Party Makeup Artist and Hairstylist based in Indore. Available for destination weddings and studio appointments.")
+  glamPricingNote     String   @default("HD & Airbrush Makeup options available. Travel to venue available across Indore & MP.")
+
+  updatedAt       DateTime @updatedAt
+}
+
+model MakeupService {
+  id          String   @id @default(uuid())
+  title       String
+  category    String   @default("Bridal") // Bridal, Party, Engagement, Hair & Draping
+  description String
+  price       Float?
+  priceText   String?  // e.g. "₹15,000 / Bridal Session"
+  duration    String?  // e.g. "2.5 - 3.5 Hours"
+  includes    String?  // e.g. "HD/Airbrush Makeup, Eyelashes, Hair Styling, Saree/Dupatta Draping"
+  image       String?
+  sortOrder   Int      @default(0)
+  isFeatured  Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model MakeupPortfolio {
+  id           String   @id @default(uuid())
+  title        String
+  category     String   @default("Bridal") // Bridal, Reception, Engagement, Party, Hairstyles
+  imageUrl     String
+  instagramUrl String?
+  description  String?
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+}
