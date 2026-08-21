@@ -7,7 +7,7 @@ import { Lock, Mail, Sparkles, Scissors, ArrowRight, AlertCircle, Loader2 } from
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('admin@stitchhouse.com');
-  const [password, setPassword] = useState('adminpassword123');
+  const [password, setPassword] = useState('TheStitchHouse@9074371984');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const router = useRouter();
@@ -122,17 +122,17 @@ export default function AdminLoginPage() {
 
         {/* Demo Helper Box */}
         <div className="mt-8 pt-6 border-t border-cream-100 text-center">
-          <p className="text-[11px] text-charcoal-500 font-medium">
+          {/* <p className="text-[11px] text-charcoal-500 font-medium">
             Default Credentials: <br />
             <span className="font-mono text-rosewood-900 font-semibold">admin@stitchhouse.com</span> /{' '}
             <span className="font-mono text-rosewood-900 font-semibold">adminpassword123</span>
-          </p>
+          </p> */}
 
           <Link
             href="/"
             className="inline-block mt-4 text-xs font-semibold text-gold-700 hover:text-rosewood-800 transition-colors"
           >
-            ← Back to Public Website
+            ← Back to Website
           </Link>
         </div>
 

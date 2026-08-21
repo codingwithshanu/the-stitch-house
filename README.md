@@ -75,7 +75,7 @@ Visit **`http://localhost:3000`** in your browser.
 
 - **Admin Portal URL**: `http://localhost:3000/admin/login`
 - **Email**: `admin@stitchhouse.com`
-- **Password**: `adminpassword123`
+- **Password**: `TheStitchHouse@9074371984`
 
 *(You can change the email/password or create new admin users directly in the database or update in `prisma/seed.ts`).*
 
