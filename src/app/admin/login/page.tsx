@@ -125,7 +125,7 @@ export default function AdminLoginPage() {
           {/* <p className="text-[11px] text-charcoal-500 font-medium">
             Default Credentials: <br />
             <span className="font-mono text-rosewood-900 font-semibold">admin@stitchhouse.com</span> /{' '}
-            <span className="font-mono text-rosewood-900 font-semibold">adminpassword123</span>
+            <span className="font-mono text-rosewood-900 font-semibold">TheStitchHouse@9074371984</span>
           </p> */}
 
           <Link
